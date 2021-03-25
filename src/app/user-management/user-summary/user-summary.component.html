@@ -1,0 +1,42 @@
+<div class="no-data" *ngIf="state === 'loading-data' || state === 'no-data'">
+  <div class="loader-container">
+    <p *ngIf="state === 'no-data'">مشتری مورد نظر را جستجو کنید</p>
+    <div class="loader-bar" *ngIf="state === 'loading-data'"></div>
+  </div>
+</div>
+
+<div class="user-info-container" *ngIf="state === 'data-loaded'">
+  <div class="rate-box m-b-15">
+    <ngx-avatar name="sajjad" bgColor="#ebebeb" fgColor="#2DBDB6" textSizeRatio="2" class="m-l-10" size="47"></ngx-avatar>
+    <nz-rate [nzCount]="4" [ngModel]="3" nzDisabled></nz-rate>
+  </div>
+
+  <div class="information">
+    <ul>
+      <li class="m-b-10">
+        <label class="m-l-5">نام:</label>
+        <span>{{user_info.fullName}}</span>
+      </li>
+      <li class="m-b-10">
+        <label class="m-l-5">کد ملی:</label>
+        <span>{{user_info.nationalCode}}</span>
+      </li>
+      <li class="m-b-10">
+        <label class="m-l-5">کد بورسی:</label>
+        <span>-</span>
+      </li>
+      <li class="m-b-10">
+        <label class="m-l-5">شماره تلفن:</label>
+        <span>{{user_info.cellPhone}}</span>
+      </li>
+      <li class="m-b-10">
+        <label class="m-l-5">ایمیل:</label>
+        <span>{{user_info.email}}</span>
+      </li>
+    </ul>
+    <a class="see-all" routerLink="/user-info">
+      مشاهده همه
+      <i nz-icon nzType="left" nzTheme="outline"></i>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<nz-table #sortTable nzShowSizeChanger [nzData]="listOfData" [nzPageSize]="1" nzTableLayout="fixed">
+  <thead>
+  <tr>
+    <th *ngFor="let column of listOfColumn" [nzSortFn]="column.compare" [nzSortPriority]="column.priority">{{ column.title }}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of sortTable.data">
+    <ng-container *ngFor="let column of listOfColumn">
+      <td>{{data[column['value']]}}</td>
+    </ng-container>
+  </tr>
+  </tbody>
+</nz-table>

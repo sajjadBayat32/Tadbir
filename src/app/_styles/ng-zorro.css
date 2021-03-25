@@ -1,0 +1,62 @@
+/************************************************NG Table****************************************************/
+.ant-table-thead th.ant-table-column-has-sorters {
+  user-select: none;
+}
+
+/*--------pagination-----------*/
+.ant-table-pagination-right {
+  justify-content: center !important;
+}
+
+.ant-pagination-item-active {
+  background: #2DBDB6 !important;
+  border-color: #2DBDB6 !important;
+}
+
+.ant-pagination-item-active a, .ant-pagination-item:focus a, .ant-pagination-item:hover a {
+  color: #fff !important;
+}
+
+nz-select:hover .ant-select-arrow {
+  color: #2DBDB6 !important;
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: #2DBDB6 !important;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: #2DBDB6 !important;
+  box-shadow: none !important;
+}
+
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background-color: #2dbdb61f !important;
+}
+
+.ant-pagination-item:focus, .ant-pagination-item:hover {
+  border-color: #2DBDB6 !important;
+}
+
+.ant-pagination-next:focus .ant-pagination-item-link, .ant-pagination-next:hover .ant-pagination-item-link, .ant-pagination-prev:focus .ant-pagination-item-link, .ant-pagination-prev:hover .ant-pagination-item-link {
+  color: #2DBDB6;
+  border-color: #2DBDB6;
+}
+
+.ant-pagination-disabled.ant-pagination-prev:hover .ant-pagination-item-link {
+  color: rgba(0,0,0,.25) !important;
+  border-color: #d9d9d9 !important;
+}
+
+.ant-pagination-item:hover a {
+  color: #2DBDB6 !important;
+}
+
+.ant-pagination-item-active:hover a {
+  color: #fff !important;
+}
+
+/*----------------Sort----------------*/
+.ant-table-column-sorter-down.active, .ant-table-column-sorter-up.active {
+  color: #2DBDB6;
+}

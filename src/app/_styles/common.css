@@ -1,0 +1,19 @@
+.text-success {
+  color: #2DBDB6 !important;
+}
+
+.text-danger {
+  color: #E53935 !important;
+}
+
+/*--------------------------button-----------------------------*/
+.btn-success {
+  color: #fff;
+  background-color: #2DBDB6 !important;
+  border: 1px solid #2DBDB6 !important;
+}
+
+.btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open > .dropdown-toggle.btn-success {
+  background-color: #00ad8e !important;
+  border: 1px solid #00ad8e !important;
+}

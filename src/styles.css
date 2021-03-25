@@ -1,0 +1,1603 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/_styles/ng-zorro.css";
+@import "./assets/fonts/fonts.css";
+@import "./app/_styles/combined.css";
+@import "./app/_styles/loading.css";
+@import "./app/_styles/tags.css";
+@import "./app/_styles/ng-zorro-custom.css";
+
+* {
+  box-sizing: border-box;
+  font-family: yekan, serif;
+}
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+*,
+*:active {
+  direction: rtl;
+}
+
+body {
+  background-color: #f7f8fa !important;
+  direction: rtl;
+  text-align: right;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  font-weight: unset;
+  padding-left: 10px;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+input::-internal-autofill-selected {
+  background-color: transparent !important;
+  background-image: none !important;
+  color: inherit !important;
+}
+
+::placeholder {
+  color: #b7b7b7 !important;
+}
+
+:-ms-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+::-ms-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+textarea:-moz-placeholder {
+  color: #b7b7b7 !important;
+}
+
+textarea::-moz-placeholder {
+  color: #b7b7b7 !important;
+}
+
+textarea:-ms-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+textarea::placeholder {
+  color: #b7b7b7 !important;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+/* WebKit, Blink, Edge */
+.form-control:-moz-placeholder {
+  color: #b7b7b7 !important;
+}
+
+/* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder {
+  color: #b7b7b7 !important;
+}
+
+/* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+/* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder {
+  color: #b7b7b7 !important;
+}
+
+input.form-control {
+  border-radius: 2px !important;
+}
+
+/* Microsoft Edge */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+strong {
+  font-family: "yekanBold", serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+p {
+  line-height: 25px;
+}
+
+/*****************************************************NgZorro-Select-DropDown**********************************************************/
+
+.ant-select-dropdown {
+  width: inherit !important;
+}
+
+.ant-select-selection .ant-select-selection__clear {
+  top: 12px !important;
+  display: none;
+}
+
+.ant-select-dropdown-menu {
+  direction: ltr !important;
+}
+
+.filter-form .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  border-radius: 2px !important;
+  height: 28px;
+  top: 2px;
+}
+
+.ant-select-item, .ant-select-item-empty {
+  font-size: 13px !important;
+}
+/*///////////////////////////////////////////////////////////User Tasks Calendar//////////////////////////////////////////////////////////////////////*/
+
+
+.mat-form-field-infix .mat-form-field-label-wrapper {
+  display: none;
+}
+
+
+/*///////////////////////////////////////////////////////////Table List//////////////////////////////////////////////////////////////*/
+
+.table100 {
+  background-color: #fff;
+  position: relative;
+  overflow: overlay;
+}
+
+.table100 th {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.4;
+}
+
+.table100-body td {
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.table100-head {
+  position: relative;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.table100-head tr {
+  border-bottom: 1px solid #cecece;
+}
+
+.table100-body {
+  max-height: 700px;
+  overflow: overlay;
+}
+
+.table100-head th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.table100-body td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.table100-body tr:not(:last-child) {
+  border-bottom: 1px solid #0001;
+}
+
+.table100-body tr:hover {
+  background-color: #f8f6ff;
+}
+
+.badge {
+  padding: 4px 8px;
+  color: #fff;
+}
+
+.fa {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.fa-trash:hover,
+.fa-power-off:hover {
+  color: red;
+}
+
+.fa-edit:hover {
+  color: #1578e2;
+}
+
+.fa-eye:hover {
+  color: #15e239;
+}
+
+.fa-sync-alt:hover {
+  color: #1578e2;
+}
+
+.error-msg {
+  text-align: center;
+  color: #929292;
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+/*!//////////////////////////////////////////////////////////Modal/////////////////////////////////////////////////////////////!*/
+
+.modal-header .close {
+  padding: 0 1rem 1rem;
+  margin: auto -1rem -1rem -1rem;
+}
+
+.modal-footer button {
+  margin: 0 5px;
+}
+
+/*!//////////////////////////////////////////////////////////Panel/////////////////////////////////////////////////////////////!*/
+
+.p-12 {
+  padding: 12px !important;
+}
+
+.p-20 {
+  padding: 20px !important;
+}
+
+.px-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 16px;
+  top: 9px;
+  width: fit-content;
+  position: relative;
+  font-family: 'yekanBold', serif;
+}
+
+.panel-heading {
+  padding: 20px;
+}
+
+.panel {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+.panel-title {
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+.panel-header {
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  padding: 19px 20px;
+  border-bottom: 1px solid #ebedf2;
+  min-height: 70px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.panel-header .panel-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.panel-header .panel-label h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #48465b;
+  font-family: 'yekanBold', serif;
+}
+
+.panel-header .panel-action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+}
+
+.panel-header .panel-action .toggle-text {
+  font-size: 12px;
+  position: relative;
+  top: 1px;
+  padding: 0 3px 2px 3px;
+  color: #b1b1b1;
+  border-bottom: 1px dashed #bbb;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.panel-header .panel-action .toggle-text:hover {
+  color: #5d78ff;
+  border-bottom: 1px dashed #5d78ff;
+}
+
+.panel-header .panel-action .ant-select {
+  font-size: 12px !important;
+}
+
+.panel-header .panel-action .ant-select-selection--single {
+  height: 24px !important;
+}
+
+.panel-header .panel-action .ant-select-selection__rendered {
+  line-height: 22px !important;
+}
+
+.panel-header .panel-action .ant-select-arrow {
+  top: 11px !important;
+}
+
+.panel-header .panel-action .filter-icon {
+  padding: 2px 7px;
+  border-radius: 3px;
+  color: #4e4e4e;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.panel-header .panel-action .filter-icon i {
+  transform: rotate(90deg);
+}
+
+.panel-header .panel-action .filter-icon:hover {
+  background: #e8e8e8;
+}
+/*!//////////////////////////////////////////////////////////ToolTip/////////////////////////////////////////////////////////////!*/
+.tooltip-text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 16px;
+}
+
+.tooltip-icon {
+  background: #525252;
+  width: 16px;
+  height: 16px;
+  color: #eaeaea;
+  position: relative;
+  text-align: center;
+  font-size: 10px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.tooltip-icon i {
+  top: 1px;
+  position: relative;
+}
+
+.tooltip-text .tooltip-content {
+  opacity: 0;
+  background-color: #525252;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: -1;
+  bottom: 10px;
+  font-size: 12px;
+  right: 8px;
+  border-radius: 4px 4px 0 4px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.tooltip-text:hover .tooltip-content {
+  z-index: 100;
+  opacity: 1;
+}
+
+/*!//////////////////////////////////////////////////////////Checkbox/////////////////////////////////////////////////////////////!*/
+input[type="checkbox"] {
+  font-size: 15px !important;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  cursor: pointer;
+  padding: 0.2em;
+  width: fit-content !important;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:before {
+  content: "\2714";
+  border-radius: 0.2em !important;
+  display: inline-block;
+  position: relative !important;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  top: -2px !important;
+  left: 0 !important;
+  padding-bottom: 1em;
+  margin-left: 0.4em;
+  vertical-align: sub;
+  color: transparent;
+  transition: 0.2s;
+}
+
+input[type="checkbox"] + label:active:before {
+  transform: scale(0);
+}
+
+input[type="checkbox"]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type="checkbox"]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type="checkbox"]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+/*!//////////////////////////////////////////////////////////Radio Button/////////////////////////////////////////////////////////////!*/
+
+.custom-control.custom-radio {
+  display: inline-block;
+}
+
+.custom-control.custom-radio label {
+  display: inline-block;
+}
+
+.custom-control.custom-radio .custom-control-label::before {
+  display: inline-block;
+  position: relative !important;
+  right: 0 !important;
+  top: 5px !important;
+}
+/*!//////////////////////////////////////////////////////////Froala Editor/////////////////////////////////////////////////////////////!*/
+div.fr-wrapper > div > a {
+  font-size: 0 !important;
+  padding: 1px !important;
+  height: 1px !important;
+}
+
+.fr-placeholder {
+  margin-top: 0 !important;
+}
+
+.fr-box.fr-basic .fr-element {
+  padding: 12px !important;
+}
+
+.fr-toolbar button[data-cmd="html"],
+.fr-toolbar button[data-cmd="help"],
+.fr-toolbar button[data-cmd="getPDF"] {
+  display: none;
+}
+
+.fr-toolbar .fr-command.fr-btn i, .fr-toolbar .fr-command.fr-btn svg,
+.fr-popup .fr-command.fr-btn i, .fr-popup .fr-command.fr-btn svg,
+.fr-modal .fr-command.fr-btn i, .fr-modal .fr-command.fr-btn svg {
+  margin: 6px 5px !important;
+  height: 21px !important;
+  width: 21px !important;
+}
+
+.fr-counter {
+  display: none !important;
+}
+
+#ticketContent.lock-type-2 .fr-wrapper {
+  background: #ffbbbb;
+}
+
+.fr-popup {
+  left: auto !important;
+}
+/*///////////////////////////////////////////////////////////Scroll bar//////////////////////////////////////////////////////////////////////*/
+.mCustomScrollBox {
+  direction: rtl !important;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_container {
+  margin-left: 0 !important;
+}
+
+.mCS-dir-rtl > .mCSB_inside > .mCSB_scrollTools, .mCS-dir-rtl > .mCSB_outside + .mCSB_scrollTools {
+  left: auto !important;
+  right: 0 !important;
+}
+/*!//////////////////////////////////////////////////////////ngx guager/////////////////////////////////////////////////////////////!*/
+.ngx-gauge-meter {
+  display: inline-flex !important;
+  top: 7px !important;
+}
+
+/*///////////////////////////////////////////////////////////Table Loading//////////////////////////////////////////////////////////////////////*/
+.loading-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loading-wrapper .circles {
+  display: flex;
+  justify-content: center;
+  direction: rtl;
+}
+
+.loading-wrapper .circle {
+  background-color: rgb(160, 160, 160);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.loading-wrapper .circle {
+  margin-right: 6px;
+}
+
+.loading-wrapper .circle-1 {
+  animation: inOut 0.5s cubic-bezier(0.35, 0, 0.35, 1) 0.4s infinite alternate;
+}
+
+.loading-wrapper .circle-2 {
+  animation: inOut 0.5s cubic-bezier(0.35, 0, 0.35, 1) 0.2s infinite alternate;
+}
+
+.loading-wrapper .circle-3 {
+  animation: inOut 0.5s cubic-bezier(0.35, 0, 0.35, 1) infinite alternate;
+}
+
+@keyframes inOut {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*!////////////////////////////////////////////////////////////////////Angular Notifier/////////////////////////////////////////////////////////////!*/
+.notifier__notification--material .notifier__notification-button {
+  margin-right: 10px;
+  margin-left: -10px;
+  vertical-align: middle;
+  top: -3px;
+  position: relative;
+}
+
+.notifier__notification-message {
+  white-space: pre-line;
+}
+
+/*!////////////////////////////////////////////////////////////////////Froala/////////////////////////////////////////////////////////////!*/
+.fr-box.fr-basic.fr-top .second-toolbar > a {
+  display: none !important;
+}
+
+.fr-box.fr-basic.fr-top .second-toolbar {
+  height: 4px;
+  border-radius: 0 0 2px 2px !important;
+}
+
+.fr-toolbar.fr-top {
+  border: 1px solid #CCCCCC !important;
+  border-radius: 2px 2px 0 0 !important;
+}
+
+.fr-box.fr-basic.fr-top .fr-wrapper {
+  border-bottom: 0;
+}
+
+.fr-tooltip {
+  display: none !important;
+}
+/*!////////////////////////////////////////////////////////////////////Ticket/////////////////////////////////////////////////////////////!*/
+.dataTables_length {
+  top: 7px;
+  position: relative;
+}
+
+tbody .odd:last-child {
+  display: none;
+}
+
+.dataTables_info {
+  padding-top: 33px !important;
+}
+
+.dataTables_paginate {
+  font-size: 13px;
+  padding-top: 30px !important;
+}
+
+.dataTables_length label,
+.dataTables_info {
+  font-size: 12px;
+}
+
+.dataTables_length label select {
+  border-radius: 4px;
+}
+
+table.dataTable.no-footer {
+  width: 100%
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  border-radius: 4px;
+  padding: 3px 10px;
+  background: #515b60;
+  color: #fff !important;
+  border-color: #515b60;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  border-radius: 4px;
+  padding: 3px 10px;
+  background: #515b60;
+  color: #fff !important;
+  border-color: #515b60;
+}
+
+.highlight-text {
+  background: #d5ff7f;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+/*!//////////////////////////////////////////////////////////Knowledge Management/////////////////////////////////////////////////////////////!*/
+.fr-quick-insert {
+  left: -32px !important;
+}
+
+.fr-toolbar {
+  border: none !important;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.go-page-back {
+  padding: 3px 7px !important;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.go-page-back:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.go-page-back i {
+  top: 1px;
+  right: 1px;
+  position: relative;
+}
+
+.search-form span {
+  left: 31px !important;
+  top: 1px !important;
+  position: inherit;
+}
+
+/*///////////////////////////////////////////////////////////social//////////////////////////////////////////////////////////////////////*/
+/* You can add global styles to this file, and also import other style files */
+.afu-attach-pin {
+  border: none !important;
+}
+
+.mat-toolbar-row {
+  height: 50px !important;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 50px !important;
+}
+
+.mat-toolbar.mat-primary {
+  background-color: #fff;
+}
+
+/*///////////////////////////////////////////////////////////generate project//////////////////////////////////////////////////////////////////////*/
+.generate-project .afu-attach-pin {
+  color: #9c9c9c !important;
+  padding: 3px 4px !important;
+  border: 1px solid #9c9c9c !important;
+  cursor: pointer !important;
+  background: transparent !important;
+}
+
+.generate-project .afu-attach-pin:hover {
+  color: #555 !important;
+  border: none;
+  background: #eee !important;
+}
+
+/*///////////////////////////////////////////////////////////Call History//////////////////////////////////////////////////////////////////////*/
+.data-stat.time-periods {
+  margin: 15px auto 0 auto;
+  text-align: center;
+}
+
+.data-stat.time-periods [type="radio"]:checked,
+.data-stat.time-periods [type="radio"]:not(:checked) {
+  position: absolute;
+  display: none;
+}
+
+.data-stat.time-periods [type="radio"]:checked + label,
+.data-stat.time-periods [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding: 0 24px 0 0;
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+
+.data-stat.time-periods [type="radio"]:checked + label:before,
+.data-stat.time-periods [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #b5b5b5;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.data-stat.time-periods [type="radio"]:checked + label:after,
+.data-stat.time-periods [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #34e16e;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.data-stat.time-periods [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.data-stat.time-periods [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.time-period {
+  font-size: 13px;
+  margin: 0 6px;
+  color: #a0a0a0;
+  cursor: pointer;
+  bottom: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.time-period.active {
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  .data-stat.time-periods [type="radio"]:checked + label,
+  .data-stat.time-periods [type="radio"]:not(:checked) + label {
+    margin: 0 5px !important;
+  }
+}
+/*///////////////////////////////////////////////////////////Table Loading//////////////////////////////////////////////////////////////////////*/
+.loading-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loading-wrapper .circles {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-wrapper .circle {
+  background-color: rgba(24, 144, 255, 0.8);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.loading-wrapper .circle {
+  margin-right: 6px;
+}
+
+.loading-wrapper .circle-1 {
+  animation: inOut 0.5s cubic-bezier(0.35, 0, 0.35, 1) 0.4s infinite alternate;
+}
+
+.loading-wrapper .circle-2 {
+  animation: inOut 0.5s cubic-bezier(0.35, 0, 0.35, 1) 0.2s infinite alternate;
+}
+
+.loading-wrapper .circle-3 {
+  animation: inOut 0.5s cubic-bezier(0.35, 0, 0.35, 1) infinite alternate;
+}
+
+@keyframes inOut {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*///////////////////////////////////////////////////////////Process Management//////////////////////////////////////////////////////////////////////*/
+.ngxImageZoomThumbnail {
+  height: 100% !important;
+  width: auto !important;
+}
+
+.ngxImageZoomFull {
+  width: 3200px !important;
+  height: 1054px !important;
+}
+
+/*///////////////////////////////////////////////////////////Data Table//////////////////////////////////////////////////////////////////////*/
+table.dataTable thead th, table.dataTable thead td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #cecece !important;
+}
+
+table.dataTable tbody td {
+  border-bottom: 1px solid #0001 !important;
+}
+
+table.dataTable tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+table.dataTable.no-footer {
+  border-bottom: none !important;
+}
+/*****************************************************Primeng**********************************************************/
+/*.p-datatable-wrapper {*/
+/*  overflow-x: auto;*/
+/*}*/
+
+.p-component-overlay {
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.p-datatable table {
+  font-size: 12px !important;
+  table-layout: auto !important;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  text-align: right !important;
+  border: 1px solid #c8c8c891 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+  border-top-width: 0 !important;
+  height: 40px !important;
+  background-color: #fff !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border: 1px solid #c8c8c891 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+  text-align: right !important;
+  position: relative;
+}
+
+.p-datatable .p-sortable-column.p-highlight {
+  background: #007ad9 !important;
+}
+
+.ui-widget-overlay {
+  background-color: transparent !important;
+}
+
+.ui-table .ui-sortable-column.ui-state-highlight {
+  background-color: #5093e1 !important;
+}
+
+.ui-paginator .ui-paginator-first, .ui-paginator .ui-paginator-prev,
+.ui-paginator .ui-paginator-next, .ui-paginator .ui-paginator-last {
+  transform: rotate(180deg) !important;
+}
+
+.ui-table .ui-paginator-bottom {
+  border: none !important;
+  background-color: transparent !important;
+  margin-top: 12px !important;
+}
+
+.ui-paginator .ui-paginator-left-content {
+  position: absolute;
+  left: 0;
+}
+
+.ui-table .ui-table-tbody > tr > td {
+  padding: 10px 0.857em !important;
+  position: relative;
+}
+
+.p-paginator-bottom.p-paginator {
+  margin-top: 12px !important;
+  border: none;
+  background: transparent;
+}
+
+.p-paginator, .p-paginator .p-paginator-first, .p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next, .p-paginator .p-paginator-last {
+  border-radius: 3px !important;
+  min-width: 25px !important;
+  height: 25px !important;
+  line-height: 25px !important;
+  padding: 0 3px !important;
+  margin: 0 1px !important;
+}
+
+.p-paginator .p-paginator-first span, .p-paginator .p-paginator-prev span,
+.p-paginator .p-paginator-next span, .p-paginator .p-paginator-last span {
+  transform: rotate(180deg);
+  font-size: 13px;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page{
+  min-width: 24px !important;
+  font-size: 14px !important;
+  height: 24px !important;
+  border-radius: 3px !important;
+  margin: 0 2px !important;
+  font-family: 'yekan', serif;
+}
+
+.p-paginator-left-content{
+  float: left;
+  position: absolute;
+  left: 0;
+}
+
+.p-paginator-left-content span{
+  font-size: 12px;
+}
+
+.ui-table .ui-table-caption, .ui-table .ui-table-summary {
+  border: none !important;
+  background-color: #fff !important;
+  padding: 10px 0 0 0 !important;
+  position: relative;
+}
+
+/*****************************************************Modal Material**********************************************************/
+.cdk-overlay-pane .mat-form-field {
+  width: 100%;
+}
+/*****************************************************NgZorro-PopConfirm**********************************************************/
+.ant-popover-inner-content {
+  text-align: right;
+}
+
+.ant-popover-message-title {
+  padding-left: 0 !important;
+  padding-right: 22px;
+}
+
+.ant-popover-buttons {
+  text-align: left !important;
+}
+
+.ant-popover-buttons button {
+  margin-left: 0 !important;
+  margin-right: 8px;
+}
+
+/*****************************************************NgZorro-Message**********************************************************/
+.ant-message-custom-content {
+
+}
+
+.ant-message .anticon {
+  top: -3px !important;
+  margin-right: 0 !important;
+  margin-left: 8px;
+}
+
+/*****************************************************NgZorro-Tag**********************************************************/
+.ant-tag {
+  margin: 0 0 0 8px !important;
+}
+
+
+/*****************************************************NgZorro-Comment**********************************************************/
+.ant-comment-avatar {
+  margin-right: 0 !important;
+  margin-left: 12px;
+}
+
+.ant-comment-content-author>a, .ant-comment-content-author>span {
+  padding-right: 0 !important;
+  padding-left: 8px;
+}
+
+/*****************************************************NgZorro-Icon**********************************************************/
+.anticon {
+  vertical-align: 2px !important;
+}
+
+
+/*****************************************************NgZorro-Pagination**********************************************************/
+.ant-pagination.mini .ant-pagination-next .anticon,
+.ant-pagination.mini .ant-pagination-prev .anticon {
+  top: -4px;
+  position: relative;
+}
+
+/*****************************************************NgZorro-Popover**********************************************************/
+.ant-popover-title {
+  text-align: right;
+  min-width: 312px !important;
+}
+
+
+/*****************************************************NgZorro-Badge**********************************************************/
+.ant-scroll-number-only>p.ant-scroll-number-only-unit {
+  height: 19px !important;
+}
+
+.ant-scroll-number-only {
+  height: 21px !important;
+}
+
+.ant-badge-count {
+  height: 14px !important;
+  line-height: 16px !important;
+}
+
+/*****************************************************NgZorro-Empty**********************************************************/
+.ant-empty {
+  margin: 0 !important;
+}
+
+.ant-empty-image {
+  height: 156px !important;
+}
+
+.ant-empty-image img {
+  height: 70% !important;
+  top: 31px;
+  position: relative;
+  filter: grayscale(1);
+  opacity: 0.5;
+}
+
+/*****************************************************NgZorro-Button**********************************************************/
+.ant-btn, .ant-btn:active, .ant-btn:focus {
+  direction: ltr;
+}
+
+.ant-btn > .anticon {
+  position: relative;
+}
+
+
+/*****************************************************NgZorro-Tree**********************************************************/
+.ant-tree .ant-tree-node-content-wrapper {
+  position: relative;
+  top: 1px;
+}
+
+/*****************************************************NgZorro-steps**********************************************************/
+.ant-steps-item-title::after {
+  left: auto !important;
+  right: 100%;
+}
+
+.ant-steps-item-title {
+  padding-left: 16px;
+  font-size: 14px !important;
+}
+
+.ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item:last-child .ant-steps-item-title {
+  padding-right: 16px !important;
+  padding-left: 0;
+}
+
+.ant-steps-item-icon {
+  width: 28px !important;
+  height: 28px !important;
+  line-height: 28px !important;
+  top: 2px;
+}
+
+.ant-steps-item-custom .ant-steps-item-icon>.ant-steps-icon {
+  width: 28px !important;
+  height: 28px !important;
+  line-height: 28px !important;
+}
+
+/*****************************************************NgZorro-Modal**********************************************************/
+.ant-modal-close {
+  left: 0;
+  right: auto !important;
+}
+
+.ant-modal-close i {
+  vertical-align: 3px !important;
+}
+
+.user-pics .ant-modal-body img {
+  height: auto !important;
+  width: 100% !important;
+  margin-top: 14px;
+}
+
+.ant-modal-footer {
+  text-align: left;
+}
+
+.ant-modal-footer button {
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+}
+
+.ant-modal-content {
+  border-radius: 4px !important;
+}
+
+.modal-filter {
+  padding: 20px 24px;
+}
+
+.modal-action {
+  padding: 20px 24px;
+}
+
+
+/*****************************************************NgZorro-Confirm Modal**********************************************************/
+.ant-modal-confirm-body-wrapper {
+  padding: 14px;
+}
+
+.ant-modal-confirm-body-wrapper .anticon-question-circle {
+  display: none;
+}
+
+.ant-modal-confirm-btns button {
+  margin-left: 8px;
+}
+
+/*****************************************************NgZorro-Confirm Modal**********************************************************/
+.ant-tree .ant-tree-switcher_close .ant-tree-switcher-icon {
+  transform: rotate(180deg);
+}
+
+.ant-tree .ant-tree-checkbox {
+  margin: 4px 0 0 8px !important;
+}
+
+.ant-tree .ant-tree-node-content-wrapper span {
+  font-size: 14px;
+}
+
+/*****************************************************NgZorro-Notification**********************************************************/
+.ant-notification-notice-with-icon .ant-notification-notice-description {
+  margin-left: 0 !important;
+  margin-right: 26px;
+  font-size: 13px !important;
+}
+
+.ant-notification-notice-with-icon .ant-notification-notice-message {
+  margin-bottom: 6px !important;
+  margin-right: 24px !important;
+  font-size: 15px !important;
+}
+
+.ant-notification-notice {
+  margin-bottom: 8px !important;
+  padding: 14px 10px !important;
+}
+
+.ant-notification-notice-close {
+  right: auto !important;
+  left: 14px;
+  top: 10px !important;
+}
+
+/*****************************************************NgZorro-Label**********************************************************/
+.custom-control-label::before {
+  position: initial !important;
+}
+
+.ant-form-item-required::before {
+  margin-right: 0 !important;
+  position: absolute;
+  left: -10px;
+}
+
+.ant-form-item .ant-form-item-label {
+  line-height: 40px !important;
+  height: 40px;
+}
+
+.ant-form-item .ant-form-item-label label {
+  direction: rtl !important;
+}
+
+/*****************************************************NgZorro-Input-Number**********************************************************/
+.ant-input-number-focused {
+  box-shadow: none !important;
+}
+/*****************************************************NgZorro-Rate**********************************************************/
+nz-rate ul.ant-rate {
+  font-size: 17px;
+}
+
+nz-rate ul.ant-rate .ant-rate-star:not(:last-child) {
+  margin-right: 0;
+}
+
+nz-rate ul.ant-rate .ant-rate-star:not(:first-child) {
+  margin-right: 6px;
+}
+/*****************************************************NgZorro-Card-Meta**********************************************************/
+.ant-card-meta-title {
+  font-size: 15px;
+}
+
+/*****************************************************NgZorro-Tabs**********************************************************/
+.ant-tabs-content {
+  direction: initial;
+  margin-left: 0 !important;
+  display: block !important;
+}
+
+.ant-tabs-tab {
+  margin: 0 0 0 32px !important;
+}
+
+.ant-tabs .ant-tabs-top-content.ant-tabs-content-animated {
+  display: block !important;
+}
+
+.ant-tabs .ant-tabs-top-content>.ant-tabs-tabpane {
+  flex-shrink: initial;
+}
+
+.ant-tabs-ink-bar.ant-tabs-ink-bar-animated {
+  left: 804px;
+  width: 57px;
+}
+
+@media (max-width: 995px) {
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+  .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    direction: ltr;
+  }
+}
+
+/*****************************************************NgZorro-Input-Group**********************************************************/
+.ant-input-group-wrapper {
+  direction: initial !important;
+}
+
+.ant-input-group {
+  direction: initial !important;
+}
+
+/*****************************************************NgZorro-Checkbox**********************************************************/
+/*this*/
+.ant-checkbox-wrapper {
+  display: block !important;
+  margin-bottom: 6px !important;
+}
+/*this*/
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  right: 6px !important;
+}
+
+/*****************************************************NgZorro-Linear-Progress-Bar**********************************************************/
+nz-progress .ant-progress-inner {
+  direction: ltr;
+  text-align: right;
+}
+
+nz-progress .ng-star-inserted {
+  direction: ltr;
+}
+
+nz-progress .ant-progress-status-active .ant-progress-bg::before {
+  right: auto !important;
+}
+
+/*****************************************************NgZorro-Badge**********************************************************/
+nz-badge.online .ant-badge-status-dot:after {
+  border-color: #52C41A !important;
+}
+
+nz-badge.offline .ant-badge-status-dot:after {
+  border-color: #F5222D !important;
+}
+
+/*****************************************************NgZorro-Model**********************************************************/
+.ant-modal-body {
+  padding: 0 !important;
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+/*****************************************************NgZorro-Tooltip**********************************************************/
+.ant-tooltip-inner {
+  min-height: 24px !important;
+  padding: 4px 6px !important;
+  font-size: 11px !important;
+}
+
+.ant-select-search__field__placeholder, .ant-select-selection__placeholder {
+  text-align: right;
+}
+
+/*****************************************************NgZorro-Select**********************************************************/
+.ant-select-selection-selected-value {
+  float: right !important;
+}
+
+/*****************************************************NgZorro-Pagination**********************************************************/
+.ant-pagination {
+  text-align: center;
+}
+
+.ant-pagination-next .ant-pagination-item-link {
+  transform: rotate(180deg) translateY(1px) translateX(10px);
+}
+
+.ant-pagination-prev .ant-pagination-item-link {
+  transform: rotate(180deg) translateY(1px);
+}
+
+.ant-pagination-simple .ant-pagination-next, .ant-pagination-simple .ant-pagination-prev {
+  line-height: 16px !important;
+}
+
+/*********************************************************text-selection**************************************************************/
+.add-task-dynamic-btn:after, .get-recommend-answer-btn:after {
+  bottom: -11px;
+  font-size: 11px;
+  left: 50%;
+  line-height: 15px;
+  content: "▼";
+  color: #aad1ff;
+  position: absolute;
+}
+
+.add-task-dynamic-btn:hover, .get-recommend-answer-btn:hover {
+  background-color: #288cff;
+  color: #ffffff !important;
+}
+
+.add-task-dynamic-btn:hover:after, .get-recommend-answer-btn:hover:after {
+  color: #288cff;
+}
+
+#cal1{
+  position:absolute;
+  height:0;
+  width:0;
+  top:100px;
+  left:100px;
+  z-index:-100;
+}
+
+#cal2{
+  position:absolute;
+  height:0;
+  width:0;
+  top:0;
+  left:0;
+  overflow: hidden;
+  z-index:-100;
+}
+
+/*********************************************************responsive**************************************************************/
+@media only screen and (max-width: 700px) {
+  .page-title {
+    font-size: 14px;
+    top: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ui-paginator .ui-paginator-left-content {
+    float: initial !important;
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  .p-paginator-left-content span {
+    display: none;
+  }
+}
+
+.ant-tabs-content {
+  min-height: 50vh;
+}
+
+
+.datepicker-outer-container.manual-position {
+  left: 0;
+}
+
+.datepicker-outer-container.manual-position {
+  position: absolute !important;
+  top: 50px;
+  z-index: 100;
+}
+
+
+/*****************************************Tadbir********************************************/
+body {
+  color: #707070 !important;
+}
+
+.page-title {
+  font-size: 19px;
+  font-family: 'yekanbold', serif;
+  margin: 0;
+  padding: 20px;
+  top: 0;
+  position: relative;
+}
+
+.panel {
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+.panel-header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+  padding: 12px 20px 0;
+  margin-bottom: 10px;
+  border-bottom: 0;
+  min-height: 55px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.panel-header h5 {
+  font-size: 16px;
+  font-family: 'yekanbold', serif;
+  margin: 0;
+  width: 100%;
+  line-height: 30px;
+  border-bottom: 2px solid #C6C6C6;
+  padding-bottom: 10px;
+}
+
+.panel-body {
+  padding: 20px 20px 5px;
+}

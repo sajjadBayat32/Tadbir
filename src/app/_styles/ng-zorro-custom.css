@@ -1,0 +1,66 @@
+/**************************************Label*********************************************/
+.ant-form-item-label>label {
+  height: 20px !important;
+  color: #666666 !important;
+  font-family: 'yekanbold', serif !important;
+}
+
+.ant-form-item-label>label::after {
+  content: '' !important;
+}
+
+/**************************************Input*********************************************/
+.ant-input {
+  border-radius: 10px !important;
+  border-color: #c6c6c6;
+  height: 36px;
+  line-height: 36px;
+}
+
+/**************************************Rate*********************************************/
+nz-rate ul.ant-rate {
+  font-size: 20px !important;
+}
+
+nz-rate ul.ant-rate li.ant-rate-star-zero .ant-rate-star-first i,
+nz-rate ul.ant-rate li.ant-rate-star-zero .ant-rate-star-second i {
+  color: #ebebeb !important;
+}
+
+/**************************************Menu*********************************************/
+.ant-menu-horizontal {
+  line-height: 50px !important;
+}
+
+.ant-menu-item .anticon, .ant-menu-submenu-title .anticon {
+  font-size: 12px !important;
+}
+
+.ant-menu-horizontal>.ant-menu-submenu>.ant-menu-submenu-title {
+  direction: ltr;
+}
+
+/**************************************Table*********************************************/
+.ant-table table tbody tr:nth-child(2n) {
+  background: #f9f9f9 !important;
+}
+
+.ant-table-thead>tr>th {
+  background: #f5f5f5 !important;
+  font-family: 'yekanbold', serif;
+  border-bottom: 2px solid #c6c6c6 !important;
+}
+
+.ant-table-tbody>tr>td {
+  font-size: 13px !important;
+  padding: 12px !important;
+}
+
+.ant-table tfoot>tr>td, .ant-table tfoot>tr>th, .ant-table-tbody>tr>td, .ant-table-thead>tr>th {
+  padding: 10px !important;
+  text-align: right !important;
+}
+
+.ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title, .ant-switch, .ant-table, .ant-table-footer, .ant-table-thead>tr>th {
+  color: #666666 !important;
+}

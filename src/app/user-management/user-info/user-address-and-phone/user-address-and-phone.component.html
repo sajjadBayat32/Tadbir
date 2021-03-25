@@ -1,0 +1,55 @@
+<form nz-form class="form-horizontal" [formGroup]="form">
+  <div class="form-group row">
+    <div class="col col-md-4">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="provinceName">محل سکونت</nz-form-label>
+        <nz-form-control class="col-md-6">
+          <input nz-input formControlName="provinceName" placeholder="مثال: تهران" />
+        </nz-form-control>
+        <nz-form-control class="col-md-6">
+          <input nz-input formControlName="cityName" placeholder="مثال: تهران" />
+          <span class="input-info-circle">
+            <i nz-icon nzType="info-circle" nzTheme="outline"></i>
+          </span>
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-8">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="address">آدرس</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="address" placeholder="مثال: شهرک غرب، بلوار فرحزادی، میدان بهرود، شهرک پرواز، بلوک 5، طبقه 12، واحد 23" />
+          <span class="input-info-circle">
+            <i nz-icon nzType="info-circle" nzTheme="outline"></i>
+          </span>
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="phone">شماره تلفن</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="phone" placeholder="مثال: 45123698  021" />
+          <span class="input-info-circle">
+            <i nz-icon nzType="info-circle" nzTheme="outline"></i>
+          </span>
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="postalCode">کد پستی</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="postalCode" placeholder="مثال: 4515879635" />
+          <span class="input-info-circle">
+            <i nz-icon nzType="info-circle" nzTheme="outline"></i>
+          </span>
+        </nz-form-control>
+      </div>
+    </div>
+
+  </div>
+</form>

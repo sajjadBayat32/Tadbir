@@ -1,0 +1,17 @@
+.col {
+  margin-bottom: 25px;
+}
+
+input {
+  pointer-events: none;
+}
+
+.input-info-circle {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  top: 0;
+  padding: 4px 14px;
+  opacity: 0.3;
+  border-right: 1px solid #d9d9d9;
+}

@@ -1,0 +1,40 @@
+.no-data {
+  min-height: 288px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 288px;
+  text-align: center;
+}
+
+.no-data .loader-container {
+  width: 228px;
+}
+
+.no-data .loader-container p {
+  opacity: 0.5;
+}
+
+.rate-box {
+  display: flex;
+}
+
+nz-rate {
+  line-height: 43px;
+}
+
+.information label {
+  font-family: 'yekanBold', serif;
+}
+
+.see-all {
+  font-family: 'yekanBold', serif;
+  color: inherit;
+}
+
+.see-all:active, .see-all:focus, .see-all:hover {
+  color: #00A09D;
+}
+
+.see-all i {
+  color: #00A09D;
+}

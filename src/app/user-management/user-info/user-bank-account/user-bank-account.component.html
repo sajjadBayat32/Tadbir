@@ -1,0 +1,26 @@
+<nz-table #basicTable [nzData]="listOfData" [nzShowPagination]="false">
+  <thead>
+  <tr>
+    <th></th>
+    <th>نام بانک</th>
+    <th>شماره حساب</th>
+    <th>شماره شبا</th>
+    <th>نوع حساب</th>
+    <th>نام شعبه</th>
+    <th>کد شعبه</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let row of basicTable.data">
+    <td [ngClass]="{'is-default': row.isDefault}">
+      <i *ngIf="row.isDefault" nz-icon nzType="check-square" nzTheme="outline"></i>
+    </td>
+    <td [ngClass]="{'is-default': row.isDefault}">{{ row.bankName }}</td>
+    <td>{{ row.accountNumber }}</td>
+    <td [ngClass]="{'is-default': row.isDefault}">{{ row.shabaNumber }}</td>
+    <td>{{ row.baTypeName }}</td>
+    <td>{{ row.bankBranch }}</td>
+    <td>{{ row.bankId }}</td>
+  </tr>
+  </tbody>
+</nz-table>

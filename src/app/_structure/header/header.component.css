@@ -1,0 +1,30 @@
+.header {
+  padding: 0 50px;
+  text-align: right;
+}
+
+.operator-info {
+  height: 52px;
+  width: 160px;
+  position: absolute;
+  left: 100px;
+  top: 0;
+  display: flex;
+  direction: ltr;
+}
+
+.operator-icon {
+  line-height: 52px;
+  font-size: 20px;
+  color: #2DBDB6;
+  padding: 0 5px;
+}
+
+.operator-name {
+  text-align: center;
+  padding: 6px 10px 0;
+}
+
+.operator-name h6 {
+  font-size: 10px;
+}

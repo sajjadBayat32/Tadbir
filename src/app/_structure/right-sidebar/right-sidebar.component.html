@@ -1,0 +1,28 @@
+<div class="sidebar" [ngClass]="{toggled: toggled}" id="rightSidebar">
+  <a id="show-sidebar" class="btn btn-sm btn-dark">
+    <i class="fa fa-bars"></i>
+  </a>
+  <nav id="sidebar" class="sidebar-wrapper">
+    <div class="sidebar-box bg-color-gray3">
+      <app-menu></app-menu>
+    </div>
+    <div class="sidebar-box user-profile-container">
+      <div class="user-profile">
+        <div class="user-info">
+          <h4>پروفایل مشتری</h4>
+          <div class="search-box">
+            <input nz-input class="m-b-20" [(ngModel)]="nationalCode" (keydown)="searchUser('key-press',$event)" placeholder="نام، نام خانوادگی، شماره ملی"
+                   type="text" />
+            <span class="input-icon" (click)="searchUser('on-click')">
+              <i nz-icon nzType="search" nzTheme="outline"></i>
+            </span>
+          </div>
+          <div class="user-summary-info">
+            <app-user-summary></app-user-summary>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </nav>
+</div>

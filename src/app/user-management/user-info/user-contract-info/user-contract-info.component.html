@@ -1,0 +1,77 @@
+<form nz-form class="form-horizontal" [formGroup]="form">
+  <div class="form-group row">
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="creationDate">تاریخ ثبت در سیستم</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="creationDate" placeholder="مثال: 1369/05/09" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="customerStatusId">شخصیت</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="customerStatusId" placeholder="مثال: فعال / غیرفعال" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="isLegal">وضعیت</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="isLegal" placeholder="مثال: حقیقی / حقوقی" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="sejamStatus">وضعیت سجام</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="sejamStatus" placeholder="مثال: سجام کامل" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="accountNumber">شناسه حساب</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="accountNumber" placeholder="مثال: 045598454864" />
+        </nz-form-control>
+      </div>
+    </div>
+
+  </div>
+</form>
+
+
+<div class="more-info">
+  <ul>
+    <li>
+      <i class="fas fa-check"></i>
+      کاربر آتی
+    </li>
+    <li>
+      <i class="fas fa-check"></i>
+      کاربر آتی کالا
+    </li>
+    <li>
+      <i class="fas fa-check"></i>
+      کاربر سهام
+    </li>
+    <li>
+      <i class="fas fa-check"></i>
+      فروش تعهدی
+    </li>
+    <li>
+      <i class="fas fa-check"></i>
+      سپرده کالایی
+    </li>
+  </ul>
+
+  <button class="reset-password-btn">بازیابی رمز عبور</button>
+</div>

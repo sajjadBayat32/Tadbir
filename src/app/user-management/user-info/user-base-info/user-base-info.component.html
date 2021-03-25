@@ -1,0 +1,57 @@
+<form nz-form class="form-horizontal" [formGroup]="form">
+  <div class="form-group row">
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="parent">نام پدر</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="parent" placeholder="مثال: ابوالفضل" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="birthCertId">شماره سریال شناسنامه</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="birthCertId" placeholder="مثال: الف   32   123456" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="birthCertificationNumber">شماره شناسنامه</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="birthCertificationNumber" placeholder="مثال: 0012584326" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="issuingCity">محل صدور</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="issuingCity" placeholder="مثال: تهران" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-2">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="birthDate">تاریخ تولد</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="birthDate" placeholder="مثال: 01   07   1369" />
+        </nz-form-control>
+      </div>
+    </div>
+
+    <div class="col col-md-3">
+      <div class="row">
+        <nz-form-label class="col-md-12 control-label" nzFor="bourseAccountName">کد بورسی پیش فرض</nz-form-label>
+        <nz-form-control class="col-md-12">
+          <input nz-input formControlName="bourseAccountName" placeholder="مثال: زرب64466446" />
+        </nz-form-control>
+      </div>
+    </div>
+  </div>
+</form>

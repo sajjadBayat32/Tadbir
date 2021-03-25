@@ -1,0 +1,7 @@
+.col {
+  margin-bottom: 25px;
+}
+
+input {
+  pointer-events: none;
+}
